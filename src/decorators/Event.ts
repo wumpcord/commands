@@ -19,10 +19,3 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-
-/**
- * Main module entrypoint for `@wumpcord/commands`
- */
-declare module '@wumpcord/commands' {
-  import * as wumpcord from 'wumpcord';
-}
