@@ -1,0 +1,8 @@
+node_modules/
+docs/
+test/
+src/
+
+.eslintrc.json
+.gitignore
+tsconfig.json
