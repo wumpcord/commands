@@ -4,17 +4,20 @@
     "module": "CommonJS",
     "lib": ["ES2015", "ES2016", "ES2017", "ES2018", "ES2019", "ES2020", "ESNext"],
     "declaration": false,
-    "outDir": "./build",
-    "rootDir": "./src",
     "strict": true,
     "noImplicitAny": false,
-    "moduleResolution": "node",
-    "types": ["node"],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "newLine": "lf",
+    "noEmitOnError": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node"],
+    "moduleResolution": "node",
+    "outDir": "./build",
+    "rootDir": "./src"
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "tests/**/*"]
+  "exclude": ["node_modules"],
+  "include": ["src/**/*"]
 }

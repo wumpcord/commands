@@ -20,4 +20,4 @@
  * SOFTWARE.
  */
 
-console.log('hello world');
+export { default as CommandClient } from './CommandClient';
