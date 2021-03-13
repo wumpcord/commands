@@ -1,3 +1,3 @@
 export function nsfw(ctr: Function) {
-    ctr.prototype.nsfw = true
+  ctr.prototype.nsfw = true;
 }

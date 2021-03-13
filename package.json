@@ -18,26 +18,28 @@
       "url": "https://floofy.dev"
     }
   ],
+  "engines": {
+    "node": ">=14"
+  },
   "scripts": {
-    "cleanup": "cp node_modules/@augu/collections/build/index.js.* node_modules/@augu/collections/build/index.js && rm node_modules/@augu/collections/build/index.js.*",
+    "clean:node_modules": "rm -rf node_modules/@types/**/node_modules && rm -rf node_modules/@augu/**/node_modules",
+    "clean:win:tar": "cp node_modules/@augu/collections/build/index.js.* node_modules/@augu/collections/build/index.js && rm node_modules/@augu/collections/build/index.js.*",
     "prepare": "npm run build",
     "build": "npm run lint && rm -rf build && tsc",
     "lint": "eslint src --ext .ts --fix"
   },
   "dependencies": {
-    "@augu/collections": "1.0.3",
-    "@augu/utils": "1.0.3",
-    "wumpcord": "1.0.11"
+    "@augu/collections": "1.0.5",
+    "@augu/utils": "1.2.0",
+    "wumpcord": "1.0.17"
   },
   "devDependencies": {
     "@augu/eslint-config": "1.10.0",
-
     "@augu/tsconfig": "1.0.1",
-    "@types/node": "14.14.31",
-    "@typescript-eslint/eslint-plugin": "4.15.2",
-    "@typescript-eslint/parser": "4.15.2",
-    "eslint": "7.21.0",
-    "typescript": "4.2.2"
-
+    "@types/node": "14.14.34",
+    "@typescript-eslint/eslint-plugin": "4.17.0",
+    "@typescript-eslint/parser": "4.17.0",
+    "eslint": "7.22.0",
+    "typescript": "4.2.3"
   }
 }
