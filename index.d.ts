@@ -20,9 +20,12 @@
  * SOFTWARE.
  */
 
+import * as wumpcord from 'wumpcord';
+
 /**
  * Main module entrypoint for `@wumpcord/commands`
  */
-declare module '@wumpcord/commands' {
-  import * as wumpcord from 'wumpcord';
-}
+declare namespace commands {}
+
+export = commands;
+export as namespace commands;
