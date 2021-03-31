@@ -19,3 +19,22 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+
+import { Client, WebSocketClientEvents, ClientOptions } from 'wumpcord';
+
+/**
+ * List of options available for constructing a new [[CommandClient]].
+ */
+interface CommandClientOptions extends ClientOptions {
+  commandsDir: string;
+  eventsDir: string;
+}
+
+/**
+ * List of events that can emit.
+ */
+interface CommandClientEvents extends WebSocketClientEvents {
+
+}
+
+export default class CommandClient extends Client<CommandClientOptions, CommandClientEvents> {}
