@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@augu/collections": "1.0.5",
-    "@augu/utils": "1.4.2",
+    "@augu/utils": "1.5.6",
     "reflect-metadata": "0.1.13",
     "wumpcord": "1.1.2"
   },
