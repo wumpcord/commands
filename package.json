@@ -31,7 +31,7 @@
     "docs": "typedoc src --out docs --theme node_modules/eledoc/bin/default/"
   },
   "dependencies": {
-    "@augu/collections": "1.0.5",
+    "@augu/collections": "1.1.0",
     "@augu/utils": "1.4.2",
     "reflect-metadata": "0.1.13",
     "wumpcord": "1.1.2"
